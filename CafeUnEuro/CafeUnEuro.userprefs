@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="CafeUnEuro.iOS/CafeUnEuro.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.0" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="CafeUnEuro.iOS/AppDelegate.cs" Line="14" Column="76" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

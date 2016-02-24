@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{8A0ACDBE-A0F2-474F-86B2-ECE6BEA88D71}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CafeUnEuro.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CoffeeServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FavorisServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MockHelper.cs" />
+  </ItemGroup>
+</Project>
