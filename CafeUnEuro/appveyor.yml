@@ -1,5 +1,6 @@
 install:
   cd CafeUnEuro
+  nuget restore
 
 nuget:
   project_feed: true
