@@ -2,11 +2,18 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using CafeUnEuro.Core;
+using Microsoft.Practices.ServiceLocation;
 
 namespace CafeUnEuro.iOS
 {
 	partial class AllCoffeeController : UIViewController
 	{
+		private ListViewModel _viewModel;
+		public ListViewModel ViewModel{
+			get{return _viewModel = _viewModel ?? ServiceLocator.Current.GetInstance <ListViewModel> ();}
+		}
+
 		public AllCoffeeController (IntPtr handle) : base (handle)
 		{
 		}
@@ -17,8 +24,16 @@ namespace CafeUnEuro.iOS
 
 			if(segue.Identifier == "detailCoffeeSegue")
 			{
-				var test = textName.Text;
+				//var test = textName.Text;
 			}
 		}
+
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+			this.ViewModel.InitVM ();
+		}
+
+
 	}
 }

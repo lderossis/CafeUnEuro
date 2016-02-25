@@ -5,6 +5,8 @@ using UIKit;
 using CafeUnEuro.Core;
 using Microsoft.Practices.ServiceLocation;
 using GalaSoft.MvvmLight.Helpers;
+using GalaSoft.MvvmLight.Views;
+using GalaSoft.MvvmLight.Ioc;
 
 namespace CafeUnEuro.iOS
 {
@@ -26,6 +28,17 @@ namespace CafeUnEuro.iOS
 			base.ViewDidLoad ();
 
 			this.SetBinding (() => ViewModel.HelloWorld, () => landingLabel.Text);
+
+			//NavigationService nav = ServiceLocator.Current.GetInstance <INavigationService> ();
+
+			if(!SimpleIoc.Default.IsRegistered<INavigationService> ())
+			{
+				NavigationService nav = new NavigationService ();
+				nav.Initialize (this.NavigationController);
+
+				nav.Configure ("DetailController", "DetailController");
+				SimpleIoc.Default.Register<INavigationService> (() => nav);
+			}
 		}
 
 	}

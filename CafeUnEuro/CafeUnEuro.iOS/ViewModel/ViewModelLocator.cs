@@ -37,6 +37,7 @@ namespace CafeUnEuro.iOS.ViewModel
 			SimpleIoc.Default.Register<IFavorisService, FavorisService> ();
 			SimpleIoc.Default.Register<ICoffeeShopAPIClientFactory, ApiFactory> ();
 
+			SimpleIoc.Default.Register<ListViewModel> ();
 			SimpleIoc.Default.Register<LandingViewModel> ();
 
         }

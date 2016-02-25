@@ -11,26 +11,18 @@ using UIKit;
 
 namespace CafeUnEuro.iOS
 {
-	[Register ("AllCoffeeController")]
-	partial class AllCoffeeController
+	[Register ("FavoritesCoffeeController")]
+	partial class FavoritesCoffeeController
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton openButton { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UITextField textName { get; set; }
+		UITableView coffeeTableView { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (openButton != null) {
-				openButton.Dispose ();
-				openButton = null;
-			}
-			if (textName != null) {
-				textName.Dispose ();
-				textName = null;
+			if (coffeeTableView != null) {
+				coffeeTableView.Dispose ();
+				coffeeTableView = null;
 			}
 		}
 	}

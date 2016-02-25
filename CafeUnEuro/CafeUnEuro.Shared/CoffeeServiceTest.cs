@@ -18,7 +18,7 @@ namespace CafeUnEuro.Tests
 		[SetUp]
 		public void Setup()
 		{
-			var mockApiUrl = new Uri ("http://cellenza.test.com");
+			var mockApiUrl = new Uri ("http://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro");
 			var  mockHttp = new MockHttpMessageHandler();
 
 			mockHttp

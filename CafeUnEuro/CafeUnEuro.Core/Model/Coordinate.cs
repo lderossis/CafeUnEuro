@@ -10,13 +10,13 @@ namespace CafeUnEuro.Core
 			this.Latitude = Latitude;
 		}
 
-		double Longitude
+		public double Longitude
 		{
 			get;
 			set;
 		}
 
-		double Latitude 
+		public double Latitude 
 		{
 			get;
 			set;

@@ -128,21 +128,31 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="LandingViewController.cs" />
-    <Compile Include="LandingViewController.designer.cs">
-      <DependentUpon>LandingViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AllCoffeeController.cs" />
-    <Compile Include="AllCoffeeController.designer.cs">
-      <DependentUpon>AllCoffeeController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Data\ApiFactory.cs" />
     <Compile Include="Data\DBProvider.cs" />
+    <Compile Include="Controller\AllCoffeeController.cs" />
+    <Compile Include="Controller\AllCoffeeController.designer.cs">
+      <DependentUpon>AllCoffeeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\FavoritesCoffeeController.cs" />
+    <Compile Include="Controller\FavoritesCoffeeController.designer.cs">
+      <DependentUpon>FavoritesCoffeeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\LandingViewController.cs" />
+    <Compile Include="Controller\LandingViewController.designer.cs">
+      <DependentUpon>LandingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeTableViewSource.cs" />
+    <Compile Include="Controller\ViewController.cs" />
+    <Compile Include="Controller\ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\DetailController.cs" />
+    <Compile Include="Controller\DetailController.designer.cs">
+      <DependentUpon>DetailController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BasicMapAnnotation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
@@ -155,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Controller\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\bg_landing.png" />
