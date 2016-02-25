@@ -11,7 +11,7 @@ namespace CafeUnEuro.Tests
 
 		public Uri ApiUrl {
 			get {
-				return new Uri ("https://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro");
+				return new Uri ("http://opendata.paris.fr/api/records/1.0/search/?dataset=liste-des-cafes-a-un-euro");
 			}
 		}
 

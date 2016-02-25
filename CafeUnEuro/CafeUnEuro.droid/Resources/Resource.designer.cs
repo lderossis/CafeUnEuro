@@ -28,6 +28,7 @@ namespace CafeUnEuro.droid
 		{
 			global::GalaSoft.MvvmLight.Resource.String.ApplicationName = global::CafeUnEuro.droid.Resource.String.ApplicationName;
 			global::GalaSoft.MvvmLight.Resource.String.Hello = global::CafeUnEuro.droid.Resource.String.Hello;
+			global::ModernHttpClient.Resource.String.library_name = global::CafeUnEuro.droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -47,7 +48,10 @@ namespace CafeUnEuro.droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int monoandroidsplash = 2130837504;
+			public const int bg_landing = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int monoandroidsplash = 2130837505;
 			
 			static Drawable()
 			{
@@ -79,7 +83,13 @@ namespace CafeUnEuro.droid
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int Main = 2130968576;
+			public const int CoffeeList = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int Detail = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int Main = 2130968578;
 			
 			static Layout()
 			{
@@ -110,17 +120,23 @@ namespace CafeUnEuro.droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int ApplicationName = 2131034114;
 			
-			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			// aapt resource value: 0x7f050001
+			public const int Hello = 2131034113;
+			
+			// aapt resource value: 0x7f050004
+			public const int app_name = 2131034116;
 			
 			// aapt resource value: 0x7f050003
-			public const int app_name = 2131034115;
+			public const int hello = 2131034115;
 			
-			// aapt resource value: 0x7f050002
-			public const int hello = 2131034114;
+			// aapt resource value: 0x7f050000
+			public const int library_name = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int title_landing = 2131034117;
 			
 			static String()
 			{

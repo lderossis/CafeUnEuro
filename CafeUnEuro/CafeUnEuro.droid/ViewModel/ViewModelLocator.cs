@@ -1,7 +1,7 @@
 /*
   In App.xaml:
   <Application.Resources>
-      <vm:ViewModelLocator xmlns:vm="clr-namespace:CafeUnEuro.droid"
+      <vm:ViewModelLocator xmlns:vm="clr-namespace:CafeUnEuro.iOS"
                            x:Key="Locator" />
   </Application.Resources>
   
@@ -15,38 +15,39 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
+using CafeUnEuro.Core;
+using CafeUnEuro.droid;
 
-namespace CafeUnEuro.droid.ViewModel
+namespace CafeUnEuro.iOS.ViewModel
 {
-    /// <summary>
-    /// This class contains static references to all the view models in the
-    /// application and provides an entry point for the bindings.
-    /// </summary>
-    public class ViewModelLocator
-    {
-        /// <summary>
-        /// Initializes a new instance of the ViewModelLocator class.
-        /// </summary>
-        public ViewModelLocator()
-        {
-            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+	/// <summary>
+	/// This class contains static references to all the view models in the
+	/// application and provides an entry point for the bindings.
+	/// </summary>
+	public class ViewModelLocator
+	{
+		/// <summary>
+		/// Initializes a new instance of the ViewModelLocator class.
+		/// </summary>
+		public ViewModelLocator()
+		{
+			ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
-            ////if (ViewModelBase.IsInDesignModeStatic)
-            ////{
-            ////    // Create design time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DesignDataService>();
-            ////}
-            ////else
-            ////{
-            ////    // Create run time view services and models
-            ////    SimpleIoc.Default.Register<IDataService, DataService>();
-            ////}
+			SimpleIoc.Default.Register<IDBProvider, DBProvider> ();
+			SimpleIoc.Default.Register<ICoffeeService, CoffeeService> ();
+			SimpleIoc.Default.Register<IFavorisService, FavorisService> ();
+			SimpleIoc.Default.Register<ICoffeeShopAPIClientFactory, ApiFactory> ();
 
-        }
-        
-        public static void Cleanup()
-        {
-            // TODO Clear the ViewModels
-        }
-    }
+			SimpleIoc.Default.Register<ListViewModel> ();
+			SimpleIoc.Default.Register<LandingViewModel> ();
+
+		}
+
+
+
+		public static void Cleanup()
+		{
+			// TODO Clear the ViewModels
+		}
+	}
 }

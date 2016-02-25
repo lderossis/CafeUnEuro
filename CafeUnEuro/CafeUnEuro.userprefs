@@ -1,45 +1,24 @@
-﻿<Properties StartupItem="CafeUnEuro.iOS/CafeUnEuro.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CafeUnEuro.iOS/Controller/DetailController.cs">
+﻿<Properties StartupItem="CafeUnEuro.droid/CafeUnEuro.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 10 (KitKat)" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CafeUnEuro.iOS/Controller/DetailController.cs" Line="18" Column="37" />
-      <File FileName="CafeUnEuro.iOS/Data/BasicMapAnnotation.cs" Line="16" Column="95" />
-      <File FileName="CafeUnEuro.Core/Data/CoffeeShopMapper.cs" Line="14" Column="1" />
-      <File FileName="CafeUnEuro.Core/ViewModel/ListViewModel.cs" Line="37" Column="1" />
-      <File FileName="CafeUnEuro.iOS/Controller/FavoritesCoffeeController.cs" Line="49" Column="80" />
+      <File FileName="CafeUnEuro.droid/Activity/LandingActivity.cs" Line="17" Column="4" />
+      <File FileName="CafeUnEuro.droid/Activity/CoffeeListActivity.cs" Line="16" Column="3" />
+      <File FileName="CafeUnEuro.droid/packages.config" Line="1" Column="1" />
+      <File FileName="CafeUnEuro.droid/Resources/values/Strings.xml" Line="5" Column="55" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CafeUnEuro" expanded="True">
-            <Node name="CafeUnEuro.Core" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Model" expanded="True" />
-              <Node name="Utilities" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
-            </Node>
-            <Node name="CafeUnEuro.iOS" expanded="True">
-              <Node name="Controller" expanded="True">
-                <Node name="DetailController.cs" selected="True" />
-              </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="ViewModel" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="CafeUnEuro" expanded="True">
-            <Node name="CafeUnEuro.Tests" expanded="True">
-              <Node name="CafeUnEuro" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="CoffeeServiceTest" expanded="True" />
-                  <Node name="FavorisServiceTest" expanded="True" />
+            <Node name="CafeUnEuro.Droid" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True">
+                  <Node name="Main.axml" selected="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="CafeUnEuro.Tests.iOS" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -49,4 +28,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CafeUnEuro.Droid AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

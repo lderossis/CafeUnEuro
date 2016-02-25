@@ -2,4 +2,5 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">CafeUnEuro.droid</string>
+	<string name="title_landing">Hello world from landing</string>
 </resources>

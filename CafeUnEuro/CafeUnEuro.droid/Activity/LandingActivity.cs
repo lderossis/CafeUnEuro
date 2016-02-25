@@ -5,7 +5,7 @@ using Android.OS;
 namespace CafeUnEuro.droid
 {
 	[Activity (Label = "CafeUnEuro.droid", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity
+	public class LandingActivity : Activity
 	{
 		int count = 1;
 
