@@ -1,6 +1,6 @@
-install:
-  cd CafeUnEuro
-  nuget restore
+before_build:
+  - cd CafeUnEuro
+  - nuget restore
 
 nuget:
   project_feed: true
