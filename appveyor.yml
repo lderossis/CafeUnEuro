@@ -1,5 +1,4 @@
 before_build:
-  - cd CafeUnEuro
   - nuget restore
 
 nuget:
