@@ -7,5 +7,5 @@ nuget:
 
 build:
   parallel: true                  # enable MSBuild parallel builds
-  project: CafeUnEuro.sln         # path to Visual Studio solution or project
+  project: CafeUnEuro\CafeUnEuro.sln         # path to Visual Studio solution or project
   include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
