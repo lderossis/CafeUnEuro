@@ -1,8 +1,0 @@
-language: C#
-solution: CafeUnEuro.sln
-install:
-  - nuget restore CafeUnEuro.sln
-  - nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release CafeUnEuro.sln
-  - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./CafeUnEuro.Tests/bin/Release/CafeUnEuro.Test.dll
