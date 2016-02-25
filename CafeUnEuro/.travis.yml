@@ -5,4 +5,4 @@ install:
   - nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release CafeUnEuro.sln
-  - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./CafeUnEuro.Test/bin/Release/CafeUnEuro.Test.dll
+  - mono ./testrunner/NUnit.Console.3.0.1/tools/nunit3-console.exe ./CafeUnEuro.Tests/bin/Release/CafeUnEuro.Test.dll
